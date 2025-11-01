@@ -1,0 +1,34 @@
+/*
+  This is our "human-made" override file.
+  We force the "Frankenstein" mix of Bootstrap and Tailwind.
+*/
+body {
+  /* Prevents horizontal scrollbars, a classic layout-saver */
+  overflow-x: hidden;
+}
+
+/* This is the "god dayum" sidebar polish.
+  We're creating our own hover/active states
+  that look way more premium than Bootstrap's defaults.
+*/
+.admin-sidebar-link {
+  color: #d1d5db; /* Tailwind 'text-gray-300' */
+  padding: 0.75rem 1.5rem;
+  display: block;
+  text-decoration: none;
+  border-left: 4px solid transparent; /* Hidden border for the active state */
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-sidebar-link:hover {
+  color: #ffffff; /* White */
+  background-color: #1f2937; /* Tailwind 'bg-gray-800' */
+}
+
+/* This is the active state! */
+.admin-sidebar-link.active {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #374151; /* Tailwind 'bg-gray-700' */
+  border-left-color: #3b82f6; /* The 'BMW Blue' */
+}

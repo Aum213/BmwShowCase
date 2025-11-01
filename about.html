@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Showcase | About</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .bg-bmw-blue { background-color: #003366; }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+
+    <nav class="bg-gradient-to-r from-gray-900 to-gray-800 p-4 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        
+        <a class="flex items-center text-white" href="index.html">
+          <img src="assests/images/bmw-logo-svgrepo-com.svg" alt="BMW Logo" class="h-8 mr-2">
+          <span class="text-xl font-semibold">BMW</span>
+        </a>
+        
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        
+        <div id="menu-links" class="hidden md:flex md:items-center w-full md:w-auto">
+          <ul class="flex flex-col md:flex-row md:space-x-2 w-full md:w-auto mt-4 md:mt-0">
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-white font-semibold bg-blue-600 rounded" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="features.html">Features</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-white border-2 border-blue-600 hover:bg-blue-600 rounded transition-colors" href="login.html">
+                Admin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="h-[60vh] relative overflow-hidden">
+        <img src="assests/images/bmw-hq.webp" alt="BMW Headquarters" class="absolute inset-0 w-full h-full object-cover z-0 opacity-80">
+        
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+        
+        <div class="relative h-full flex items-center justify-center z-20 p-8">
+            <div class="max-w-3xl text-center">
+                <h1 class="text-5xl md:text-7xl mb-4 text-white font-extrabold drop-shadow-lg">
+                  More Than a Century of Passion.
+                </h1>
+                <p class="text-lg md:text-xl text-white drop-shadow-md">
+                  We didn't just witness the evolution of the automobile. We drove it.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Legacy is Our Launchpad</h2>
+                    <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        It started in 1916. While our first products conquered the skies as aircraft engines, our true destiny was on the road. From the first motorcycle to the iconic kidney grille, our story has been one of relentless innovation.
+                    </p>
+                    <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        Today, Bayerische Motoren Werke AG is a symbol, not just of luxury, but of what happens when you refuse to compromise on performance. We don't just build cars. We craft experiences. We engineer joy. 
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        This showcase is a tribute to that legacy—a line in the sand that stretches from our past, through our present, and into the electric future we're building *today*.
+                    </p>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <img src="assests/images/7s(1).webp" alt="Modern BMW Interior" class="w-full h-[400px] object-cover rounded-lg shadow-xl">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">A Timeline of Innovation</h2>
+        
+        <div class="absolute left-0 right-0 h-1 bg-blue-200 w-4/5 mx-auto" style="top: 50%; transform: translateY(-50%); z-index: 1;"></div>
+
+        <div class="relative grid grid-cols-1 md:grid-cols-3 gap-16 z-10">
+          
+          <div class="bg-white p-6 rounded-lg shadow-xl text-center z-10">
+            <h3 class="text-2xl font-bold text-blue-600 mb-2">1916</h3>
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">Our Founding</h4>
+            <p class="text-gray-600">Bayerische Flugzeugwerke AG (BFW) is born. A year later, it becomes BMW. Our journey from the clouds to the road begins.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-xl text-center z-10">
+            <h3 class="text-2xl font-bold text-blue-600 mb-2">1972</h3>
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">The M-Series</h4>
+            <p class="text-gray-600">BMW Motorsport GmbH is founded. The "world's fastest letter" is born, and the racetrack is forever changed. This is our performance soul.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-xl text-center z-10">
+            <h3 class="text-2xl font-bold text-blue-600 mb-2">2013</h3>
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">The 'i' Revolution</h4>
+            <p class="text-gray-600">The all-electric BMW i3 is launched. We prove that the "Ultimate Driving Machine" doesn't need gasoline to have a heartbeat.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-bmw-blue text-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <blockquote class="text-center">
+                <i class="bi bi-quote text-6xl text-blue-400 mb-6"></i>
+                <p class="text-3xl md:text-4xl italic font-light mb-6">
+                    "The ultimate driving machine isn't built — it's born from a relentless, uncompromising passion for the road."
+                </p>
+                <footer class="text-gray-300 text-lg">— Our Philosophy</footer>
+            </blockquote>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2025 BMW Showcase. All Rights Reserved.</p>
+            <div class="mt-6 space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

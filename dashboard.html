@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | BMW Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="bg-gray-100">
+    <div class="d-flex">
+
+        <nav class="bg-black min-vh-100 position-fixed" style="width: 250px;">
+            <div class="text-center py-4 border-bottom border-gray-800">
+                <img src="assests/images/bmw-logo.webp" alt="BMW Logo" class="h-12 w-20 mx-auto mb-2">
+                <div class="text-white text-xl font-semibold">BMW Admin</div>
+                <div class="text-gray-400 text-sm">Showcase Panel</div>
+            </div>
+            
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item"><a class="admin-sidebar-link active" href="dashboard.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="add-car.html"><i class="bi bi-plus-circle-fill me-2"></i>Add Car</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="manage-cars.html"><i class="bi bi-car-front-fill me-2"></i>Manage Cars</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="manage-gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="messages.html"><i class="bi bi-envelope-fill me-2"></i>Messages</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="settings.html"><i class="bi bi-gear-fill me-2"></i>Settings</a></li>
+                <li class="nav-item"><a class="admin-sidebar-link" href="reports.html"><i class="bi bi-bar-chart-fill me-2"></i>Reports</a></li>
+            </ul>
+            
+            <div class="p-4 mt-auto">
+                <a href="login.html" class="admin-sidebar-link text-red-500 hover:bg-red-900/50 hover:text-red-400">
+                <i class="bi bi-box-arrow-left me-2"></i>Log Out
+                </a>
+            </div>
+        </nav>
+        <div class="flex-1 w-100" style="margin-left: 250px;">
+        
+            <nav class="navbar navbar-light bg-white shadow-sm px-4 sticky-top">
+                <span class="navbar-brand mb-0 h1 font-semibold text-xl">Dashboard</span>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none text-gray-700 dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="https://i.pravatar.cc/300?u=admin" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                        <strong>Admin User</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-sm">
+                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="index.html" target="_blank">View Site</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-red-500" href="login.html">Sign out</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container-fluid p-4">
+                <h2 class="mb-4 text-3xl font-bold">At a Glance</h2>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card bg-white rounded-lg shadow-lg border-0 border-t-4 border-blue-600 p-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-car-front-fill text-4xl text-blue-600"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <div class="text-gray-500 text-sm font-semibold mb-1">TOTAL CARS</div>
+                                    <div class="text-3xl font-bold text-gray-900">6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card bg-white rounded-lg shadow-lg border-0 border-t-4 border-green-500 p-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-images text-4xl text-green-500"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <div class="text-gray-500 text-sm font-semibold mb-1">GALLERY ITEMS</div>
+                                    <div class="text-3xl font-bold text-gray-900">24</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card bg-white rounded-lg shadow-lg border-0 border-t-4 border-yellow-500 p-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-envelope-fill text-4xl text-yellow-500"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <div class="text-gray-500 text-sm font-semibold mb-1">MESSAGES</div>
+                                    <div class="text-3xl font-bold text-gray-900">3 <span class="text-base text-yellow-600">(1 New)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card bg-white rounded-lg shadow-lg border-0 border-t-4 border-red-500 p-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-graph-up text-4xl text-red-500"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <div class="text-gray-500 text-sm font-semibold mb-1">VISITS (NOV)</div>
+                                    <div class="text-3xl font-bold text-gray-900">3,100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-white p-4 rounded-lg shadow-xl border-0">
+                    <h3 class="font-bold text-xl mb-3 text-gray-900">Recent Activity</h3>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead class="text-xs text-gray-500 uppercase tracking-wider">
+                                <tr>
+                                    <th class="border-0">Car Name</th>
+                                    <th class="border-0">Model</th>
+                                    <th class="border-0">Year</th>
+                                    <th class="border-0">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="border-0 font-semibold text-gray-800">M3</td>
+                                    <td class="border-0 text-gray-600">G80</td>
+                                    <td class="border-0 text-gray-600">2022</td>
+                                    <td class="border-0"><span class="badge bg-green-100 text-green-800 rounded-full px-3 py-2 font-semibold">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0 font-semibold text-gray-800">X5</td>
+                                    <td class="border-0 text-gray-600">G05</td>
+                                    <td class="border-0 text-gray-600">2023</td>
+                                    <td class="border-0"><span class="badge bg-green-100 text-green-800 rounded-full px-3 py-2 font-semibold">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0 font-semibold text-gray-800">M4</td>
+                                    <td class="border-0 text-gray-600">F82</td>
+                                    <td class="border-0 text-gray-600">2021</td>
+                                    <td class="border-0"><span class="badge bg-gray-200 text-gray-700 rounded-full px-3 py-2 font-semibold">Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <footer class="text-center text-gray-400 mt-5 mb-2">© 2025 BMW Admin Panel</footer>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

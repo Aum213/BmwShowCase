@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Showcase | Contact</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white overflow-x-hidden">
+
+    <nav class="bg-gradient-to-r from-gray-900 to-gray-800 p-4 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        
+        <a class="flex items-center text-white" href="index.html">
+          <img src="assests/images/bmw-logo.webp" alt="BMW Logo" class="h-8 mr-2">
+          <span class="text-xl font-semibold">BMW</span>
+        </a>
+        
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        
+        <div id="menu-links" class="hidden md:flex md:items-center w-full md:w-auto">
+          <ul class="flex flex-col md:flex-row md:space-x-2 w-full md:w-auto mt-4 md:mt-0">
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="features.html">Features</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-white font-semibold bg-blue-600 rounded" href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="block py-2 px-3 text-white border-2 border-blue-600 hover:bg-blue-600 rounded transition-colors" href="login.html">
+                Admin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="h-[60vh] relative overflow-hidden">
+        <img src="assests/images/bmw-hq.webp" alt="BMW Headquarters" class="absolute inset-0 w-full h-full object-cover z-0 opacity-80">
+        
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+        
+        <div class="relative h-full flex items-center justify-center z-20 p-8">
+            <div class="max-w-3xl text-center">
+                <h1 class="text-5xl md:text-7xl mb-4 text-white font-extrabold drop-shadow-lg">
+                  Get in Touch
+                </h1>
+                <p class="text-lg md:text-xl text-white drop-shadow-md">
+                  Your journey with us doesn't end with a drive. It begins with a conversation.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-16">
+        
+          <div class="w-full md:w-2/3">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-10">
+              Have a question about a model? Need support? Or just want to share your passion for the road? We're ready to listen. Fill out the form below and a member of our enthusiast team will get back to you.
+            </p>
+          
+            <form onsubmit="return validateContact()" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-gray-800 font-semibold mb-2">Name</label>
+                  <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow">
+                </div>
+                <div>
+                  <label for="email" class="block text-gray-800 font-semibold mb-2">Email</label>
+                  <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow">
+                </div>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-gray-800 font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow" placeholder="Tell us what's on your mind..."></textarea>
+              </div>
+              
+              <div>
+                <button type="submit" class="w-full md:w-auto bg-blue-600 text-white font-bold py-3 px-10 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="w-full md:w-1/3">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Contact Details</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-10">
+              You can also reach us directly through the channels below.
+            </p>
+            
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <i class="bi bi-geo-alt-fill text-3xl text-blue-600"></i>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">Address</h3>
+                  <p class="text-gray-700">BMW Group Headquarters<br>Petuelring 130<br>80788 Munich, Germany</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <i class="bi bi-envelope-fill text-3xl text-blue-600"></i>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">General Inquiries</h3>
+                  <p class="text-gray-700 hover:text-blue-600 transition-colors"><a href="mailto:contact@bmw.com">contact@bmw.com</a></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <i class="bi bi-telephone-fill text-3xl text-blue-600"></i>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">Phone</h3>
+                  <p class="text-gray-700">+49 89 3820 0</p>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="my-10 border-gray-200">
+            
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Find a Dealer</h3>
+            <p class="text-gray-700 mb-6">
+              For sales or service, find your local BMW center for personalized support.
+            </p>
+            <a href="#" class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-black transition-colors">
+              Find a Dealer Near You
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+   
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2025 BMW Showcase. All Rights Reserved.</p>
+            <div class="mt-6 space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
